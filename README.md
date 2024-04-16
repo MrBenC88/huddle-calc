@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Gathering Expense Calculator
+Use this tool to calculate expenses and determine projected total spending. Tip options included. Tax calculations are not included.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Note: this tool is not error-free and has limited error handling. The format must be followed.
+The format is as follows: 
+``` 
+calc description
+```
+The calculation must be on the left side and the description on the right separated by a space delimiter.
+The calculation and description each cannot have spaces inside them. 
+Start a new line for a new entry.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Example usage:
+```
+20*2 2pizza
+13*5 5tacos
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Quick setup
+1. `git clone`
+2. `cd huddle-calc`
+3. `npm install`
+4. `npm dev`
+ 
