@@ -109,7 +109,7 @@ const Home = () => {
             <Heading size="md">Totals with different tip %</Heading>
             <HStack>
               {tips.map((tip) => (
-                <Box p="5%" key={tip} bg="lightblue" borderRadius="20px" p="3%">
+                <Box key={tip} bg="lightblue" borderRadius="20px" p="3%">
                   <Text key={tip} fontSize="md">
                     {tip}% tip:{" "}
                     <b>${(total + (total * tip) / 100).toFixed(2)}</b>
